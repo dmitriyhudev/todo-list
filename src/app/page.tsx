@@ -14,7 +14,7 @@ export const Main = styled.main`
   background: linear-gradient(90deg, rgba(246, 209, 252, 1), rgba(185, 213, 255, 1));
 `
 export const LeftText = styled.div`
-  font-size: 96px;
+  font-size: 2vw;
   display: inline-flex;
 `
 export const MainWindow = styled.h1`
@@ -113,7 +113,7 @@ export default function Home() {
     <Main>
         <LeftText>
             <h1 style={{fontWeight: "700", color: "rgba(64, 64, 64, 1)"}}>To-Do</h1>
-            <div style={{width: "36px"}}></div>
+            <div style={{width: "1vw"}}></div>
             <h1 style={{fontWeight: "700", color: "rgba(147, 51, 234, 1)"}}>UI</h1>
         </LeftText>
         <MainWindow>
@@ -148,14 +148,14 @@ export default function Home() {
                             <p style={{margin: "0px 0px 0px 20px", width: "100px",fontSize: "16px", fontWeight: "400"}}>Task 2</p>
                             <div style={{width: "100%"}}></div>
                             <p style={{width: "200px", alignSelf: "center", fontSize: "14px", fontWeight: "400", color: "rgba(107, 114, 128, 1)"}}>Today at 18.30</p>
-                            <img src="OptionsIcon.svg"></img>
+                            <img style={{alignSelf: "center"}} src="OptionsIcon.svg"></img>
                         </VisibleTask>
                         <VisibleTask>
                             <img src="TaskNotDoneIcon.svg"></img>
                             <p style={{margin: "0px 0px 0px 20px", width: "100px",fontSize: "16px", fontWeight: "400"}}>Task 2</p>
                             <div style={{width: "100%"}}></div>
                             <p style={{width: "200px", alignSelf: "center", fontSize: "14px", fontWeight: "400", color: "rgba(107, 114, 128, 1)"}}>Today at 18.30</p>
-                            <img style={{margin: "0px 0px 0px 0px", alignSelf: "center"}} src="OptionsIcon.svg"></img>
+                            <img style={{alignSelf: "center"}} src="OptionsIcon.svg"></img>
                         </VisibleTask>
                     </TasksWindow>
                 </BottomWindows>
