@@ -11,9 +11,19 @@ export const Main = styled.main`
     background: linear-gradient(90deg, rgba(246, 209, 252, 1), rgba(185, 213, 255, 1));
 `
 export const LeftText = styled.div`
-    font-size: 5vh;
+    font-size: 10vh;
+    font-weight: 700;
     display: inline-flex;
 `
+
+export const TextPartOne = styled(LeftText)`
+    color: rgba(64, 64, 64, 1);
+`
+
+export const TextPartTwo = styled(LeftText)`
+    color: rgba(147, 51, 234, 1);
+`
+
 export const MainWindow = styled.div`
     display: flex;
     flex-direction: column;
@@ -32,7 +42,16 @@ export const AccountWindow = styled.div`
     border-style: none;
     background-color: rgba(255, 255, 255, 1);
     color: rgba(147, 51, 234, 1);
+    font-size: 20px;
 `
+export const ToDoLabel = styled(AccountWindow)`
+    
+`
+export const UserNameLabel = styled(AccountWindow)`
+    font-size: 16px;
+    font-weight: 400;
+`
+
 export const BottomWindows = styled.div`
     display: flex;
     justify-content: space-between;
@@ -55,6 +74,10 @@ export const DateButton = styled.div`
     color: rgba(147, 51, 234, 1);
     background-color: rgba(147, 51, 234, 0.06);
 `
+export const LeftWindowLabel = styled.div`
+    margin-left: 12px;
+`
+
 export const AllTasksButton = styled.div`
     display: flex;
     width: 185px;
@@ -73,6 +96,10 @@ export const DateDirectionButton = styled.div`
     font-size: 16px;
     color: rgba(107, 114, 128, 1);
 `
+export const DateLabel = styled.div`
+    margin-left: 9px;
+`
+
 export const AddTaskButton = styled.div`
     display: flex;
     width: 185px;
@@ -84,6 +111,10 @@ export const AddTaskButton = styled.div`
     color: rgba(147, 51, 234, 1);
     background-color: rgba(147, 51, 234, 0.06);
 `
+export const AddTaskLabel = styled.div`
+    margin-left: 12px;
+`
+
 export const TasksWindow = styled.div`
     display: flex;
     flex-direction: column;
@@ -101,4 +132,20 @@ export const VisibleTask = styled.div`
     padding: 16px 8px 16px 8px;
     border-radius: 10px;
     background-color: rgba(147, 51, 234, 0.06);
+`
+export const TaskName = styled.div`
+    margin: 0px 0px 0px 20px;
+    width: 100px;
+    font-size: 16px;
+    font-weight: 400;
+`
+export const EmptySpaceInTask = styled.div`
+    width: 100%;
+`
+export const TaskDate = styled.div`
+    width: 200px;
+    align-self: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(107, 114, 128, 1);
 `
